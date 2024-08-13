@@ -8,6 +8,11 @@ body {
   height: 72px;
   background: darkmagenta;
   color: white;
+  font-weight: 1000;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  padding-left: 32px;
 }
 
 .footer {
@@ -26,4 +31,51 @@ body {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+}
+
+/* My solution: */
+
+body{
+  display: flex;
+  flex-direction: column;
+}
+
+.center{
+  flex: 1;
+  display: flex;
+}
+
+ul{
+  padding: 0px;
+  margin: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+li{
+  list-style-type: none;
+  margin: 20px 0;
+}
+
+.cards {
+  padding: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.card {
+  padding: 16px;
+  width: 300px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
